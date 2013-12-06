@@ -35,10 +35,12 @@
       <AdditionalIncludeDirectories>include;deps\uv\include;deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>_WIN32;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;_WINDOWS;_USRDLL;JANSSON_DLL_EXPORTS;_WINDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <AdditionalDependencies>advapi32.lib;shell32.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>include;deps\uv\include;deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

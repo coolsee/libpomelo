@@ -32,3 +32,4 @@ deps/uv/uv.Makefile
 Default
 *.sdf
 *.opensdf
+*.suo
