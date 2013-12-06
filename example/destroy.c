@@ -8,7 +8,7 @@
 #include "pomelo.h"
 
 const char *ip = "127.0.0.1";
-int port = 3010;
+int port = 3014;
 
 // request callback
 void on_request_cb(pc_request_t *req, int status, json_t *resp) {
@@ -30,7 +30,7 @@ void on_request_cb(pc_request_t *req, int status, json_t *resp) {
 
 void do_request(pc_client_t *client) {
   // compose request
-  const char *route = "connector.helloHandler.hi";
+  const char *route = "gate.gateHandler.queryEntry";
   json_t *msg = json_object();
   json_t *str = json_string("hi~");
   json_object_set(msg, "msg", str);
